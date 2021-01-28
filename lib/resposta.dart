@@ -4,7 +4,10 @@ class Resposta extends StatelessWidget {
   final String texto;
   final void Function() quandoSelecionado;
 
-  Resposta(this.texto, this.quandoSelecionado);
+  Resposta({
+    @required this.texto,
+    @required this.quandoSelecionado,
+  });
 
   @override
   Widget build(BuildContext context) {
